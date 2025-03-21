@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi, I'm Hritabrata Das 👋<br><br>I'm a passionate B.Tech CSE AI & ML student with a strong focus on machine learning, front-end development, and AI applications. I have hands-on experience with Python, Java, Flask, and building dynamic web applications. Currently, I'm diving into the world of AI, specifically with projects like building an AI-powered customer support chatbot, and exploring full-stack development.<br><br>I enjoy creating meaningful solutions to real-world problems, whether it's through developing innovative software, optimizing user experiences, or exploring the latest tech trends.
+Hi, I'm Hritabrata Das 👋<br><br>I'm a passionate BE CSE AI & ML student with a strong focus on machine learning, front-end development, and AI applications. I have hands-on experience with Python, Java, Flask, and building dynamic web applications. Currently, I'm diving into the world of AI, specifically with projects like building an AI-powered customer support chatbot, and exploring full-stack development.<br><br>I enjoy creating meaningful solutions to real-world problems, whether it's through developing innovative software, optimizing user experiences, or exploring the latest tech trends.
 
 
 ## 🌐 Socials:
