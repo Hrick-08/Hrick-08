@@ -1,193 +1,22 @@
-# Hritabrata Das - Portfolio
+<h1 align="center">Hi 👋, I'm Hritabrata Das</h1>
+<h3 align="center">🛠 I’m currently working on full-stack projects combining MERN and FastAPI, and experimenting with AI-powered applications. 🤝 I’m looking to collaborate on AI/ML projects, web apps, and innovative tech solutions. 👐 I’m looking for help with scaling AI models for production and optimizing complex backend systems. 🌱 I’m currently learning advanced full-stack development, cloud deployment, and cutting-edge AI frameworks. 💬 Ask me about Python, Django, FastAPI, MERN stack, or building AI-driven applications. ⚡ Fun fact: I once turned a simple idea into a working prototype in less than 24 hours.</h3>
 
-A retro-styled portfolio website built with React, Vite, and TailwindCSS, featuring a 90s/early-2000s computer interface aesthetic.
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=hrick-08" alt="hrick-08" /></a> </p>
 
-![Portfolio Preview](https://img.shields.io/badge/React-18.3.1-blue?logo=react)
-![Vite](https://img.shields.io/badge/Vite-5.2.0-purple?logo=vite)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.17-38B2AC?logo=tailwind-css)
-![Framer Motion](https://img.shields.io/badge/Framer%20Motion-11.10.16-black?logo=framer)
+- 🔭 I’m currently working on [BeatCode](https://github.com/Hrick-08/BeatCode)
 
-## 🎨 Features
+- 👨‍💻 All of my projects are available at [https://github.com/Hrick-08/](https://github.com/Hrick-08/)
 
-- **Retro 90s/2000s Theme**: Pixel-art inspired design with old operating system aesthetics
-- **Dark/Light Mode**: Toggle between themes with retro-styled switches
-- **Responsive Design**: Optimized for desktop and mobile devices
-- **Smooth Animations**: Framer Motion powered transitions and micro-interactions
-- **Single Page Application**: Smooth scrolling between sections
-- **Interactive Elements**: Hover effects, retro cursors, and animated components
+- 📫 How to reach me **hritabratadas8@gmail.com**
 
-## 🚀 Sections
+- 📄 Know about my experiences [https://docs.google.com/document/d/1ovFuqG2PaR206m8_jK7yYgge1oYOMNkI/edit?usp=sharing&ouid=111394719610328012470&rtpof=true&sd=true](https://docs.google.com/document/d/1ovFuqG2PaR206m8_jK7yYgge1oYOMNkI/edit?usp=sharing&ouid=111394719610328012470&rtpof=true&sd=true)
 
-1. **Hero**: Introduction with animated elements and social links
-2. **About**: Personal information and achievements
-3. **Skills**: Technical skills with proficiency indicators
-4. **Projects**: Featured projects with GitHub links
-5. **Education**: Academic background and achievements
-6. **Certifications**: Professional certifications and badges
-7. **Contact**: Contact form and information
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/hritabrata-das-913460326" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="hritabrata-das-913460326" height="30" width="40" /></a>
+</p>
 
-## 🛠️ Tech Stack
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cockroachlabs.com/product/cockroachdb/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/cockroachdb.svg" alt="cockroachdb" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
-- **Frontend**: React 18.3.1
-- **Build Tool**: Vite 5.2.0
-- **Styling**: TailwindCSS 3.4.17
-- **Animations**: Framer Motion 11.10.16
-- **Icons**: Lucide React
-- **Deployment**: GitHub Pages
-
-## 📦 Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Hrick-08/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:5173`
-
-## 🏗️ Build & Deploy
-
-### Local Build
-```bash
-npm run build
-```
-
-### Deploy to GitHub Pages
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial portfolio commit"
-   git push origin main
-   ```
-
-2. **Deploy**
-   ```bash
-   npm run deploy
-   ```
-
-3. **Configure GitHub Pages**
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Set source to "Deploy from a branch"
-   - Select `gh-pages` branch
-   - Save
-
-Your portfolio will be available at: `https://hrick-08.github.io/portfolio`
-
-## 🎨 Customization
-
-### Colors
-The retro theme uses a custom color palette defined in `tailwind.config.js`:
-
-```javascript
-colors: {
-  retro: {
-    beige: '#F5F5DC',
-    'dusty-pink': '#E8B4B8',
-    'muted-blue': '#B8D4E3',
-    cream: '#FFFDD0',
-    'light-brown': '#D2B48C',
-    // ... dark variants
-  }
-}
-```
-
-### Fonts
-- **Pixel Font**: "Press Start 2P" for headings and buttons
-- **Retro Font**: "VT323" for retro-style text
-- **Body Font**: "Inter" for readable content
-
-### Components
-All components are located in `src/components/` and follow a consistent retro styling pattern:
-
-- `retro-window`: Main container with title bar
-- `retro-button`: Styled buttons with hover effects
-- `retro-card`: Content cards with borders and shadows
-- `retro-badge`: Skill and technology badges
-
-## 📱 Responsive Design
-
-The portfolio is fully responsive with breakpoints:
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: > 1024px
-
-## 🎯 Performance
-
-- **Lazy Loading**: Components load as they come into view
-- **Optimized Images**: SVG icons and optimized assets
-- **Minimal Dependencies**: Only essential packages included
-- **Fast Build**: Vite for rapid development and building
-
-## 🔧 Development
-
-### Project Structure
-```
-src/
-├── components/          # React components
-│   ├── Navbar.jsx      # Navigation with theme toggle
-│   ├── Hero.jsx        # Hero section
-│   ├── About.jsx       # About section
-│   ├── Skills.jsx      # Skills and technologies
-│   ├── Projects.jsx    # Featured projects
-│   ├── Education.jsx   # Education background
-│   ├── Certifications.jsx # Certifications
-│   ├── Contact.jsx     # Contact form
-│   └── Footer.jsx      # Footer with links
-├── App.jsx             # Main app component
-├── main.jsx           # Entry point
-└── index.css          # Global styles and Tailwind
-```
-
-### Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run deploy` - Deploy to GitHub Pages
-
-## 🎨 Retro Theme Elements
-
-### UI Components
-- **Window/Dialog Boxes**: Title bars with control buttons
-- **Chunky Buttons**: Thick borders and drop shadows
-- **Pixel Borders**: Sharp, defined edges
-- **Retro Cursors**: Custom cursor styles
-- **Loading Bars**: Blocky progress indicators
-- **Speech Bubbles**: Message containers
-
-### Animations
-- **Window Opening**: Scale and fade effects
-- **Hover States**: Color inversions and translations
-- **Scroll Animations**: Staggered element reveals
-- **Micro-interactions**: Button presses and form interactions
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Contact
-
-- **Email**: hritabratadas8@gmail.com
-- **GitHub**: [@Hrick-08](https://github.com/Hrick-08)
-- **LinkedIn**: [Hritabrata Das](https://linkedin.com/in/hritabrata-das-913460326/)
-
----
-
-Made with ❤️ using React, Vite, and TailwindCSS
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=hrick-08&show_icons=true&locale=en&layout=compact" alt="hrick-08" /></p>
