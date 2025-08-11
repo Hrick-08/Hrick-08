@@ -25,11 +25,42 @@ const Navbar = () => {
   ]
 
   const scrollToSection = (href) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
+    console.log('Attempting to scroll to:', href) // Debug log
+    
+    // Close mobile menu immediately
     setIsOpen(false)
+    
+    // Use requestAnimationFrame for better timing
+    requestAnimationFrame(() => {
+      const element = document.querySelector(href)
+      if (element) {
+        console.log('Element found, scrolling to:', element) // Debug log
+        // Add offset for fixed navbar
+        const navbarHeight = 64 // h-16 = 64px
+        const elementPosition = element.offsetTop - navbarHeight
+        
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        })
+      } else {
+        console.log('Element not found for:', href) // Debug log
+        // Fallback: try to find by section ID without #
+        const fallbackElement = document.querySelector(href.substring(1))
+        if (fallbackElement) {
+          console.log('Fallback element found, scrolling to:', fallbackElement) // Debug log
+          const navbarHeight = 64
+          const elementPosition = fallbackElement.offsetTop - navbarHeight
+          
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
+          })
+        } else {
+          console.log('No element found for:', href) // Debug log
+        }
+      }
+    })
   }
 
   return (
@@ -85,24 +116,21 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <motion.div
-        initial={false}
-        animate={{ height: isOpen ? 'auto' : 0 }}
-        className="md:hidden overflow-hidden bg-retro-cream/95 backdrop-blur-sm border-t-4 border-gray-800"
-      >
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          {navItems.map((item) => (
-            <motion.button
-              key={item.name}
-              whileHover={{ x: 4 }}
-              onClick={() => scrollToSection(item.href)}
-              className="mobile-nav-item"
-            >
-              {item.name}
-            </motion.button>
-          ))}
+      {isOpen && (
+        <div className="md:hidden bg-retro-cream/95 backdrop-blur-sm border-t-4 border-gray-800">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            {navItems.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className="mobile-nav-item"
+              >
+                {item.name}
+              </button>
+            ))}
+          </div>
         </div>
-      </motion.div>
+      )}
     </motion.nav>
   )
 }
