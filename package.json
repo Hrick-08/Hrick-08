@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hrick-08.github.io/portfolio",
+  "homepage": "https://hrick-08.github.io/Hrick-08",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
