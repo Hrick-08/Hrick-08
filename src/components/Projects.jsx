@@ -33,16 +33,16 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="py-20 bg-retro-light-brown/20 dark:bg-retro-dark-brown/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="mobile-py bg-retro-light-brown/20 dark:bg-retro-dark-brown/20">
+      <div className="max-w-7xl mx-auto mobile-px">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mobile-mb"
         >
-          <h2 className="font-pixel text-4xl md:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
+          <h2 className="font-pixel mobile-text-4xl sm:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-retro-muted-blue dark:bg-retro-dark-blue mx-auto border-2 border-gray-800 dark:border-gray-200"></div>
@@ -59,8 +59,8 @@ const Projects = () => {
             <div className="w-6"></div>
           </div>
 
-          <div className="p-6">
-            <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="p-4 sm:p-6">
+            <div className="mobile-project-grid">
               {projects.map((project, index) => (
                 <motion.div
                   key={project.title}
@@ -78,10 +78,10 @@ const Projects = () => {
                         {project.icon}
                       </div>
                       <div>
-                        <h3 className="font-pixel text-lg text-gray-800 dark:text-gray-200">
+                        <h3 className="font-pixel mobile-text-base sm:text-lg text-gray-800 dark:text-gray-200">
                           {project.title}
                         </h3>
-                        <p className="font-retro text-sm text-retro-muted-blue dark:text-retro-dark-blue">
+                        <p className="font-retro mobile-text-sm text-retro-muted-blue dark:text-retro-dark-blue">
                           {project.subtitle}
                         </p>
                       </div>
@@ -89,7 +89,7 @@ const Projects = () => {
                   </div>
 
                   {/* Project Description */}
-                  <p className="font-retro text-sm text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                  <p className="font-retro mobile-text-sm sm:text-sm text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                     {project.description}
                   </p>
 
@@ -98,7 +98,7 @@ const Projects = () => {
                     <h4 className="font-pixel text-xs text-gray-800 dark:text-gray-200 mb-2 uppercase tracking-wider">
                       Technologies Used
                     </h4>
-                    <div className="flex flex-wrap gap-1">
+                    <div className="mobile-badge-group">
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
@@ -111,14 +111,14 @@ const Projects = () => {
                   </div>
 
                   {/* Project Links */}
-                  <div className="flex space-x-3">
+                  <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
                     <motion.a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="retro-button flex items-center space-x-2 flex-1 justify-center"
+                      className="retro-button flex items-center space-x-2 justify-center"
                     >
                       <Github className="w-4 h-4" />
                       <span className="font-pixel text-xs">GitHub</span>
@@ -131,7 +131,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="retro-button-secondary flex items-center space-x-2 flex-1 justify-center"
+                        className="retro-button-secondary flex items-center space-x-2 justify-center"
                       >
                         <ExternalLink className="w-4 h-4" />
                         <span className="font-pixel text-xs">Live</span>
@@ -151,7 +151,7 @@ const Projects = () => {
               className="mt-12 text-center"
             >
               <div className="retro-speech-bubble max-w-md mx-auto">
-                <p className="font-retro text-lg text-gray-800 dark:text-gray-200 mb-4">
+                <p className="font-retro mobile-text-lg text-gray-800 dark:text-gray-200 mb-4">
                   Want to see more projects?
                 </p>
                 <motion.a

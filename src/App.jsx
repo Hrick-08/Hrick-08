@@ -16,10 +16,10 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-retro-beige retro-scrollbar">
+    <div className="min-h-screen bg-retro-beige retro-scrollbar overflow-x-hidden max-w-full">
       <Navbar />
       
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <About />
         <Skills />

@@ -26,22 +26,22 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="py-20 bg-retro-light-brown/20 dark:bg-retro-dark-brown/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="mobile-py bg-retro-light-brown/20 dark:bg-retro-dark-brown/20">
+      <div className="max-w-7xl mx-auto mobile-px">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mobile-mb"
         >
-          <h2 className="font-pixel text-4xl md:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
+          <h2 className="font-pixel mobile-text-4xl sm:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
             About Me
           </h2>
           <div className="w-24 h-1 bg-retro-muted-blue dark:bg-retro-dark-blue mx-auto border-2 border-gray-800 dark:border-gray-200"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* About Text */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -60,14 +60,14 @@ const About = () => {
               <div className="w-6"></div>
             </div>
 
-            <div className="p-6">
-              <p className="font-retro text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            <div className="p-4 sm:p-6">
+              <p className="font-retro mobile-text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 leading-relaxed">
                 I'm a CSE (AI & ML) student at Chitkara University passionate about building practical tech projects 
                 using Python, FastAPI, Django, MERN, and Next.js. I enjoy working on AI, cloud computing, and solving 
                 real-world problems with code.
               </p>
               
-              <p className="font-retro text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="font-retro mobile-text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 leading-relaxed">
                 I've developed competitive programming platforms, blogging systems, and productivity tools while 
                 constantly improving my technical and problem-solving skills. My goal is to create innovative 
                 solutions that make a difference in people's lives.
@@ -75,12 +75,12 @@ const About = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="retro-badge text-center">
-                  <div className="font-pixel text-sm">Projects</div>
-                  <div className="font-retro text-lg">10+</div>
+                  <div className="font-pixel mobile-text-sm">Projects</div>
+                  <div className="font-retro mobile-text-lg">10+</div>
                 </div>
                 <div className="retro-badge text-center">
-                  <div className="font-pixel text-sm">Technologies</div>
-                  <div className="font-retro text-lg">15+</div>
+                  <div className="font-pixel mobile-text-sm">Technologies</div>
+                  <div className="font-retro mobile-text-lg">15+</div>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6"
           >
             {features.map((feature, index) => (
               <motion.div
@@ -109,10 +109,10 @@ const About = () => {
                     {feature.icon}
                   </div>
                 </div>
-                <h3 className="font-pixel text-lg text-gray-800 dark:text-gray-200 mb-2">
+                <h3 className="font-pixel mobile-text-base sm:text-lg text-gray-800 dark:text-gray-200 mb-2">
                   {feature.title}
                 </h3>
-                <p className="font-retro text-sm text-gray-600 dark:text-gray-400">
+                <p className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400">
                   {feature.description}
                 </p>
               </motion.div>
@@ -126,7 +126,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-16"
+          className="mt-12 sm:mt-16"
         >
           <div className="retro-window">
             <div className="retro-title-bar">
@@ -139,18 +139,18 @@ const About = () => {
               <div className="w-6"></div>
             </div>
 
-            <div className="p-6">
-              <h3 className="font-pixel text-2xl text-gray-800 dark:text-gray-200 mb-6 text-center">
+            <div className="p-4 sm:p-6">
+              <h3 className="font-pixel mobile-text-xl sm:text-2xl text-gray-800 dark:text-gray-200 mb-4 sm:mb-6 text-center">
                 Achievements & Recognition
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div className="retro-speech-bubble">
-                  <p className="font-retro text-lg">
+                  <p className="font-retro mobile-text-base sm:text-lg">
                     🏆 Won multiple intra-college technical and non-technical events
                   </p>
                 </div>
                 <div className="retro-speech-bubble">
-                  <p className="font-retro text-lg">
+                  <p className="font-retro mobile-text-base sm:text-lg">
                     🎯 Actively participated in coding contests, debates, and cultural programs
                   </p>
                 </div>

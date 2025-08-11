@@ -6,30 +6,42 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
     @apply bg-retro-beige dark:bg-retro-dark-beige text-gray-800 dark:text-gray-200 transition-colors duration-300;
     font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
-  /* Retro cursor styles */
+  /* Ensure all elements don't overflow */
   * {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="16" height="16" fill="black"/><rect x="2" y="2" width="12" height="12" fill="white"/></svg>') 8 8, auto;
+    box-sizing: border-box;
   }
 
-  a, button, [role="button"] {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="16" height="16" fill="white"/><rect x="2" y="2" width="12" height="12" fill="black"/></svg>') 8 8, pointer;
-  }
+  /* Retro cursor styles - disabled on mobile for better UX */
+  @media (min-width: 768px) {
+    * {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="16" height="16" fill="black"/><rect x="2" y="2" width="12" height="12" fill="white"/></svg>') 8 8, auto;
+    }
 
-  input, textarea {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="2" height="16" fill="black"/><rect x="4" y="4" width="2" height="8" fill="black"/></svg>') 8 8, text;
+    a, button, [role="button"] {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="16" height="16" fill="white"/><rect x="2" y="2" width="12" height="12" fill="black"/></svg>') 8 8, pointer;
+    }
+
+    input, textarea {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="2" height="16" fill="black"/><rect x="4" y="4" width="2" height="8" fill="black"/></svg>') 8 8, text;
+    }
   }
 }
 
 @layer components {
   .retro-window {
     @apply bg-retro-cream dark:bg-retro-dark-cream border-4 border-gray-800 dark:border-gray-200 shadow-retro;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .retro-title-bar {
@@ -38,22 +50,41 @@
 
   .retro-button {
     @apply bg-retro-dusty-pink dark:bg-retro-dark-pink border-3 border-gray-800 dark:border-gray-200 px-4 py-2 font-pixel text-sm shadow-retro hover:shadow-retro-hover hover:translate-x-1 hover:-translate-y-1 transition-all duration-200 active:translate-x-0 active:translate-y-0 active:shadow-retro;
+    /* Mobile touch-friendly sizing */
+    min-height: 44px;
+    min-width: 44px;
+    max-width: 100%;
   }
 
   .retro-button-secondary {
     @apply bg-retro-light-brown dark:bg-retro-dark-brown border-3 border-gray-800 dark:border-gray-200 px-4 py-2 font-pixel text-sm shadow-retro hover:shadow-retro-hover hover:translate-x-1 hover:-translate-y-1 transition-all duration-200 active:translate-x-0 active:translate-y-0 active:shadow-retro;
+    /* Mobile touch-friendly sizing */
+    min-height: 44px;
+    min-width: 44px;
+    max-width: 100%;
   }
 
   .retro-input {
     @apply bg-white dark:bg-gray-800 border-3 border-gray-800 dark:border-gray-200 px-3 py-2 font-retro text-lg shadow-retro-inset focus:outline-none focus:border-retro-muted-blue dark:focus:border-retro-dark-blue;
+    /* Mobile touch-friendly sizing */
+    min-height: 44px;
+    max-width: 100%;
   }
 
   .retro-badge {
     @apply bg-retro-light-brown dark:bg-retro-dark-brown border-2 border-gray-800 dark:border-gray-200 px-3 py-1 font-retro text-sm shadow-retro inline-block;
+    /* Mobile touch-friendly sizing */
+    min-height: 32px;
+    max-width: 100%;
+    word-wrap: break-word;
   }
 
   .retro-card {
     @apply bg-retro-cream dark:bg-retro-dark-cream border-4 border-gray-800 dark:border-gray-200 p-6 shadow-retro hover:shadow-retro-hover transition-all duration-300;
+    /* Mobile padding adjustment */
+    @apply p-4 sm:p-6;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .retro-toggle {
@@ -74,6 +105,10 @@
 
   .retro-speech-bubble {
     @apply relative bg-retro-cream dark:bg-retro-dark-cream border-3 border-gray-800 dark:border-gray-200 p-4 shadow-retro;
+    /* Mobile padding adjustment */
+    @apply p-3 sm:p-4;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .retro-speech-bubble::after {
@@ -103,6 +138,78 @@
   .retro-scrollbar::-webkit-scrollbar-thumb {
     @apply bg-retro-light-brown dark:bg-retro-dark-brown border-2 border-gray-800 dark:border-gray-200;
   }
+
+  /* Mobile-specific styles */
+  .mobile-text-sm {
+    @apply text-xs sm:text-sm;
+  }
+
+  .mobile-text-base {
+    @apply text-sm sm:text-base;
+  }
+
+  .mobile-text-lg {
+    @apply text-base sm:text-lg;
+  }
+
+  .mobile-text-xl {
+    @apply text-lg sm:text-xl;
+  }
+
+  .mobile-text-2xl {
+    @apply text-xl sm:text-2xl;
+  }
+
+  .mobile-text-3xl {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  .mobile-text-4xl {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  .mobile-text-5xl {
+    @apply text-4xl sm:text-5xl;
+  }
+
+  .mobile-text-6xl {
+    @apply text-5xl sm:text-6xl;
+  }
+
+  /* Mobile navigation improvements */
+  .mobile-nav-item {
+    @apply block w-full text-left font-retro text-base text-gray-800 hover:text-retro-muted-blue px-4 py-3 transition-colors border-b border-gray-300 last:border-b-0;
+  }
+
+  /* Mobile form improvements */
+  .mobile-form-grid {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
+  }
+
+  /* Mobile project grid */
+  .mobile-project-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8;
+  }
+
+  /* Mobile skills grid */
+  .mobile-skills-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8;
+  }
+
+  /* Mobile contact info spacing */
+  .mobile-contact-info {
+    @apply space-y-6 sm:space-y-4;
+  }
+
+  /* Mobile button spacing */
+  .mobile-button-group {
+    @apply flex flex-col sm:flex-row gap-4 sm:gap-3;
+  }
+
+  /* Mobile badge spacing */
+  .mobile-badge-group {
+    @apply flex flex-wrap gap-2 sm:gap-1;
+  }
 }
 
 @layer utilities {
@@ -118,5 +225,22 @@
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
+  }
+
+  /* Mobile-specific utilities */
+  .mobile-px {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .mobile-py {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  .mobile-mb {
+    @apply mb-8 sm:mb-12 lg:mb-16;
+  }
+
+  .mobile-gap {
+    @apply gap-4 sm:gap-6 lg:gap-8;
   }
 }

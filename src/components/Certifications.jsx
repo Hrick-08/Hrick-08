@@ -38,16 +38,16 @@ const Certifications = () => {
   ]
 
   return (
-    <section id="certifications" className="py-20 bg-retro-light-brown/20 dark:bg-retro-dark-brown/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="certifications" className="mobile-py bg-retro-light-brown/20 dark:bg-retro-dark-brown/20">
+      <div className="max-w-7xl mx-auto mobile-px">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mobile-mb"
         >
-          <h2 className="font-pixel text-4xl md:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
+          <h2 className="font-pixel mobile-text-4xl sm:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
             Certifications
           </h2>
           <div className="w-24 h-1 bg-retro-muted-blue dark:bg-retro-dark-blue mx-auto border-2 border-gray-800 dark:border-gray-200"></div>
@@ -64,8 +64,8 @@ const Certifications = () => {
             <div className="w-6"></div>
           </div>
 
-          <div className="p-6">
-            <div className="grid md:grid-cols-2 gap-6">
+          <div className="p-4 sm:p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {certifications.map((cert, index) => (
                 <motion.div
                   key={cert.title}
@@ -85,7 +85,7 @@ const Certifications = () => {
                     
                     <div className="flex-1">
                       <div className="flex items-start justify-between mb-2">
-                        <h3 className="font-pixel text-lg text-gray-800 dark:text-gray-200">
+                        <h3 className="font-pixel mobile-text-base sm:text-lg text-gray-800 dark:text-gray-200">
                           {cert.title}
                         </h3>
                         <motion.a
@@ -100,19 +100,19 @@ const Certifications = () => {
                         </motion.a>
                       </div>
                       
-                      <div className="flex items-center space-x-4 mb-3">
+                      <div className="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-3">
                         <div className="flex items-center space-x-1">
                           <Award className="w-4 h-4 text-retro-muted-blue dark:text-retro-dark-blue" />
-                          <span className="font-retro text-sm text-gray-600 dark:text-gray-400">
+                          <span className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400">
                             {cert.issuer}
                           </span>
                         </div>
-                        <span className="font-retro text-sm text-gray-600 dark:text-gray-400">
+                        <span className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400">
                           {cert.date}
                         </span>
                       </div>
                       
-                      <p className="font-retro text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                      <p className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                         {cert.description}
                       </p>
                     </div>
@@ -129,28 +129,28 @@ const Certifications = () => {
               viewport={{ once: true }}
               className="mt-12"
             >
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
                 <div className="retro-card text-center">
-                  <div className="font-pixel text-3xl text-gray-800 dark:text-gray-200 mb-2">
+                  <div className="font-pixel mobile-text-2xl sm:text-3xl text-gray-800 dark:text-gray-200 mb-2">
                     {certifications.length}
                   </div>
-                  <div className="font-retro text-sm text-gray-600 dark:text-gray-400">
+                  <div className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400">
                     Total Certifications
                   </div>
                 </div>
                 <div className="retro-card text-center">
-                  <div className="font-pixel text-3xl text-gray-800 dark:text-gray-200 mb-2">
+                  <div className="font-pixel mobile-text-2xl sm:text-3xl text-gray-800 dark:text-gray-200 mb-2">
                     3
                   </div>
-                  <div className="font-retro text-sm text-gray-600 dark:text-gray-400">
+                  <div className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400">
                     Microsoft Certifications
                   </div>
                 </div>
                 <div className="retro-card text-center">
-                  <div className="font-pixel text-3xl text-gray-800 dark:text-gray-200 mb-2">
+                  <div className="font-pixel mobile-text-2xl sm:text-3xl text-gray-800 dark:text-gray-200 mb-2">
                     1
                   </div>
-                  <div className="font-retro text-sm text-gray-600 dark:text-gray-400">
+                  <div className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400">
                     University Specialization
                   </div>
                 </div>
@@ -166,14 +166,14 @@ const Certifications = () => {
               className="mt-12 text-center"
             >
               <div className="retro-speech-bubble max-w-2xl mx-auto">
-                <h3 className="font-pixel text-lg text-gray-800 dark:text-gray-200 mb-3">
+                <h3 className="font-pixel mobile-text-base sm:text-lg text-gray-800 dark:text-gray-200 mb-3">
                   Continuous Learning Journey
                 </h3>
-                <p className="font-retro text-sm text-gray-600 dark:text-gray-400 mb-4">
+                <p className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400 mb-4">
                   I'm constantly expanding my knowledge through certifications and courses. 
                   Currently focusing on advanced AI/ML concepts and cloud architecture.
                 </p>
-                <div className="flex justify-center space-x-4">
+                <div className="mobile-badge-group justify-center">
                   <div className="retro-badge">
                     <span className="font-pixel text-xs">AI/ML</span>
                   </div>

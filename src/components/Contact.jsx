@@ -53,22 +53,22 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="mobile-py">
+      <div className="max-w-7xl mx-auto mobile-px">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mobile-mb"
         >
-          <h2 className="font-pixel text-4xl md:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
+          <h2 className="font-pixel mobile-text-4xl sm:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-retro-muted-blue dark:bg-retro-dark-blue mx-auto border-2 border-gray-800 dark:border-gray-200"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="mobile-form-grid">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -87,17 +87,17 @@ const Contact = () => {
                 <div className="w-6"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="font-pixel text-2xl text-gray-800 dark:text-gray-200 mb-6">
+              <div className="p-4 sm:p-6">
+                <h3 className="font-pixel mobile-text-xl sm:text-2xl text-gray-800 dark:text-gray-200 mb-4 sm:mb-6">
                   Let's Connect!
                 </h3>
                 
-                <p className="font-retro text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                <p className="font-retro mobile-text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 leading-relaxed">
                   I'm always interested in new opportunities, collaborations, or just a friendly chat about technology. 
                   Feel free to reach out through any of the channels below.
                 </p>
 
-                <div className="space-y-4">
+                <div className="mobile-contact-info">
                   {contactInfo.map((info, index) => (
                     <motion.div
                       key={info.label}
@@ -111,18 +111,18 @@ const Contact = () => {
                         {info.icon}
                       </div>
                       <div>
-                        <div className="font-pixel text-sm text-gray-800 dark:text-gray-200">
+                        <div className="font-pixel mobile-text-sm text-gray-800 dark:text-gray-200">
                           {info.label}
                         </div>
                         {info.link ? (
                           <a
                             href={info.link}
-                            className="font-retro text-sm text-retro-muted-blue dark:text-retro-dark-blue hover:underline"
+                            className="font-retro mobile-text-sm text-retro-muted-blue dark:text-retro-dark-blue hover:underline"
                           >
                             {info.value}
                           </a>
                         ) : (
-                          <div className="font-retro text-sm text-gray-600 dark:text-gray-400">
+                          <div className="font-retro mobile-text-sm text-gray-600 dark:text-gray-400">
                             {info.value}
                           </div>
                         )}
@@ -132,11 +132,11 @@ const Contact = () => {
                 </div>
 
                 {/* Social Links */}
-                <div className="mt-8">
-                  <h4 className="font-pixel text-lg text-gray-800 dark:text-gray-200 mb-4">
+                <div className="mt-6 sm:mt-8">
+                  <h4 className="font-pixel mobile-text-base sm:text-lg text-gray-800 dark:text-gray-200 mb-4">
                     Follow Me
                   </h4>
-                  <div className="flex space-x-4">
+                  <div className="mobile-button-group">
                     <motion.a
                       href="https://github.com/Hrick-08"
                       target="_blank"
@@ -183,14 +183,14 @@ const Contact = () => {
                 <div className="w-6"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="font-pixel text-2xl text-gray-800 dark:text-gray-200 mb-6">
+              <div className="p-4 sm:p-6">
+                <h3 className="font-pixel mobile-text-xl sm:text-2xl text-gray-800 dark:text-gray-200 mb-4 sm:mb-6">
                   Send Message
                 </h3>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <label className="font-pixel text-sm text-gray-800 dark:text-gray-200 mb-2 block">
+                    <label className="font-pixel mobile-text-sm text-gray-800 dark:text-gray-200 mb-2 block">
                       Name
                     </label>
                     <input
@@ -205,7 +205,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="font-pixel text-sm text-gray-800 dark:text-gray-200 mb-2 block">
+                    <label className="font-pixel mobile-text-sm text-gray-800 dark:text-gray-200 mb-2 block">
                       Email
                     </label>
                     <input
@@ -220,7 +220,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="font-pixel text-sm text-gray-800 dark:text-gray-200 mb-2 block">
+                    <label className="font-pixel mobile-text-sm text-gray-800 dark:text-gray-200 mb-2 block">
                       Subject
                     </label>
                     <input
@@ -235,7 +235,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="font-pixel text-sm text-gray-800 dark:text-gray-200 mb-2 block">
+                    <label className="font-pixel mobile-text-sm text-gray-800 dark:text-gray-200 mb-2 block">
                       Message
                     </label>
                     <textarea
@@ -283,7 +283,7 @@ const Contact = () => {
           className="mt-12 text-center"
         >
           <div className="retro-speech-bubble max-w-md mx-auto">
-            <p className="font-retro text-lg text-gray-800 dark:text-gray-200">
+            <p className="font-retro mobile-text-lg text-gray-800 dark:text-gray-200">
               💬 I typically respond within 24 hours
             </p>
           </div>

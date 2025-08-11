@@ -26,16 +26,16 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="mobile-py">
+      <div className="max-w-7xl mx-auto mobile-px">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mobile-mb"
         >
-          <h2 className="font-pixel text-4xl md:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
+          <h2 className="font-pixel mobile-text-4xl sm:text-5xl text-gray-800 dark:text-gray-200 mb-4 text-shadow">
             Skills & Technologies
           </h2>
           <div className="w-24 h-1 bg-retro-muted-blue dark:bg-retro-dark-blue mx-auto border-2 border-gray-800 dark:border-gray-200"></div>
@@ -52,8 +52,8 @@ const Skills = () => {
             <div className="w-6"></div>
           </div>
 
-          <div className="p-6">
-            <div className="grid md:grid-cols-2 gap-8">
+          <div className="p-4 sm:p-6">
+            <div className="mobile-skills-grid">
               {skillCategories.map((category, categoryIndex) => (
                 <motion.div
                   key={category.title}
@@ -67,12 +67,12 @@ const Skills = () => {
                     <div className="p-2 bg-retro-muted-blue dark:bg-retro-dark-blue border-3 border-gray-800 dark:border-gray-200 mr-3">
                       {category.icon}
                     </div>
-                    <h3 className="font-pixel text-xl text-gray-800 dark:text-gray-200">
+                    <h3 className="font-pixel mobile-text-lg sm:text-xl text-gray-800 dark:text-gray-200">
                       {category.title}
                     </h3>
                   </div>
                   
-                  <div className="flex flex-wrap gap-2">
+                  <div className="mobile-badge-group">
                     {category.skills.map((skill, skillIndex) => (
                       <motion.div
                         key={skill}
@@ -81,7 +81,7 @@ const Skills = () => {
                         transition={{ duration: 0.3, delay: (categoryIndex * 0.1) + (skillIndex * 0.05) }}
                         viewport={{ once: true }}
                         whileHover={{ scale: 1.1, y: -2 }}
-                        className="retro-badge font-retro text-sm"
+                        className="retro-badge font-retro mobile-text-sm"
                       >
                         {skill}
                       </motion.div>
@@ -99,15 +99,15 @@ const Skills = () => {
               viewport={{ once: true }}
               className="mt-12"
             >
-              <h3 className="font-pixel text-2xl text-gray-800 dark:text-gray-200 mb-6 text-center">
+              <h3 className="font-pixel mobile-text-xl sm:text-2xl text-gray-800 dark:text-gray-200 mb-6 text-center">
                 Proficiency Levels
               </h3>
               
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-retro text-sm">Python</span>
+                      <span className="font-retro mobile-text-sm">Python</span>
                       <span className="font-pixel text-xs">90%</span>
                     </div>
                     <div className="retro-loading-bar">
@@ -123,7 +123,7 @@ const Skills = () => {
                   
                   <div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-retro text-sm">JavaScript</span>
+                      <span className="font-retro mobile-text-sm">JavaScript</span>
                       <span className="font-pixel text-xs">85%</span>
                     </div>
                     <div className="retro-loading-bar">
@@ -139,7 +139,7 @@ const Skills = () => {
                   
                   <div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-retro text-sm">React</span>
+                      <span className="font-retro mobile-text-sm">React</span>
                       <span className="font-pixel text-xs">80%</span>
                     </div>
                     <div className="retro-loading-bar">
@@ -157,7 +157,7 @@ const Skills = () => {
                 <div className="space-y-4">
                   <div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-retro text-sm">FastAPI</span>
+                      <span className="font-retro mobile-text-sm">FastAPI</span>
                       <span className="font-pixel text-xs">85%</span>
                     </div>
                     <div className="retro-loading-bar">
@@ -173,7 +173,7 @@ const Skills = () => {
                   
                   <div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-retro text-sm">Django</span>
+                      <span className="font-retro mobile-text-sm">Django</span>
                       <span className="font-pixel text-xs">75%</span>
                     </div>
                     <div className="retro-loading-bar">
@@ -189,7 +189,7 @@ const Skills = () => {
                   
                   <div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-retro text-sm">Cloud Deployment</span>
+                      <span className="font-retro mobile-text-sm">Cloud Deployment</span>
                       <span className="font-pixel text-xs">70%</span>
                     </div>
                     <div className="retro-loading-bar">

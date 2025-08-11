@@ -40,13 +40,13 @@ const Navbar = () => {
         scrolled ? 'bg-retro-cream/95 backdrop-blur-sm' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto mobile-px">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('#home')}
-              className="font-pixel text-lg text-gray-800 hover:text-retro-muted-blue transition-colors"
+              className="font-pixel mobile-text-base sm:text-lg text-gray-800 hover:text-retro-muted-blue transition-colors"
             >
               {'<Hrick/>'}
             </button>
@@ -76,6 +76,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(!isOpen)}
               className="retro-button p-2"
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </motion.button>
@@ -87,7 +88,7 @@ const Navbar = () => {
       <motion.div
         initial={false}
         animate={{ height: isOpen ? 'auto' : 0 }}
-        className="md:hidden overflow-hidden bg-retro-cream border-t-4 border-gray-800"
+        className="md:hidden overflow-hidden bg-retro-cream/95 backdrop-blur-sm border-t-4 border-gray-800"
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navItems.map((item) => (
@@ -95,7 +96,7 @@ const Navbar = () => {
               key={item.name}
               whileHover={{ x: 4 }}
               onClick={() => scrollToSection(item.href)}
-              className="block w-full text-left font-retro text-sm text-gray-800 hover:text-retro-muted-blue px-3 py-2 transition-colors"
+              className="mobile-nav-item"
             >
               {item.name}
             </motion.button>
