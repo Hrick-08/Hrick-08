@@ -87,29 +87,31 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="flex flex-col items-center space-y-6"
             >
-              <div className="mobile-button-group w-full">
-                <motion.a
-                  href="https://github.com/Hrick-08"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="retro-button flex items-center space-x-2 w-full sm:w-auto justify-center"
-                >
-                  <Github className="w-4 h-4" />
-                  <span>GitHub</span>
-                </motion.a>
-                <motion.a
-                  href="https://linkedin.com/in/hritabrata-das-913460326/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="retro-button-secondary flex items-center space-x-2 w-full sm:w-auto justify-center"
-                >
-                  <Linkedin className="w-4 h-4" />
-                  <span>LinkedIn</span>
-                </motion.a>
+              <div className="mobile-button-group w-full flex justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-3">
+                  <motion.a
+                    href="https://github.com/Hrick-08"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="retro-button flex items-center space-x-2 w-full sm:w-auto justify-center"
+                  >
+                    <Github className="w-4 h-4" />
+                    <span>GitHub</span>
+                  </motion.a>
+                  <motion.a
+                    href="https://linkedin.com/in/hritabrata-das-913460326/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="retro-button-secondary flex items-center space-x-2 w-full sm:w-auto justify-center"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                    <span>LinkedIn</span>
+                  </motion.a>
+                </div>
               </div>
 
               {/* Scroll Indicator moved below buttons */}
