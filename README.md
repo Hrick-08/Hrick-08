@@ -9,7 +9,7 @@
 
 - 📫 How to reach me **hritabratadas8@gmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/11rNFmkoNaMonIoiliQmLEIKJH1QHbh8Y/view?usp=sharing](https://drive.google.com/file/d/11rNFmkoNaMonIoiliQmLEIKJH1QHbh8Y/view?usp=sharing)
+- 📄 Know about my experiences [My Resume](https://drive.google.com/file/d/1qRpdudNVUEhroFGWM0JHCP2jDDFaihVH/view?usp=drivesdk)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
