@@ -19,5 +19,5 @@
 <h3 align="left">Languages and Tools:</h3>
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=anaconda,androidstudio,aws,azure,bash,cpp,css,django,docker,electron,express,fastapi,flask,gcp,git,html,java,js,linux,mongodb,mysql,nextjs,nodejs,postgres,postman,py,pytorch,react,redis,tailwind,ts" />
+  <img src="https://skillicons.dev/icons?i=anaconda,aws,azure,bash,cpp,css,django,docker,electron,express,fastapi,flask,gcp,git,html,java,js,linux,mongodb,mysql,nextjs,nodejs,postgres,postman,py,pytorch,react,redis,tailwind,ts" />
 </p>
