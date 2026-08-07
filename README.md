@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Cloud**
 
-- 👨‍💻 All of my projects are available at [https://hrick.me](https://hrick.me)
+- 👨‍💻 All of my projects are available at [https://hrick.in](https://hrick.in)
 
 - 📫 How to reach me **hritabratadas8@gmail.com**
 
