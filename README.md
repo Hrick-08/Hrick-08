@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [RISHI](https://github.com/Hrick-08/R.I.S.H.I.)
 
-- 🌱 I’m currently learning **Cloud**
+- 🌱 I’m currently learning **AI & Cloud**
 
 - 👨‍💻 All of my projects are available at [https://hrick.in](https://hrick.in)
 
